@@ -12,10 +12,10 @@ import kidimage from "./assets/pc2.png";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/shopping-cart">
       <Navbar />
       <Routes>
-        <Route path="/shopping-cart" element={<Shop />} />
+        <Route path="/" element={<Shop />} />
         <Route
           path="/men"
           element={<ShopCategory category="men" image={manImage} />}
