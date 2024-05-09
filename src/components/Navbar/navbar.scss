@@ -6,6 +6,7 @@ img {
   color: black;
 }
 .navbar {
+  width: 100%;
   padding: 0 4rem;
   background-color: white;
   height: 5rem;
@@ -65,6 +66,17 @@ img {
   &:active {
     color: red;
   }
+  .active {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 2rem;
+      height: 3px;
+      background-color: red;
+      left: 0;
+      top: 1.4rem;
+    }
+  }
 }
 .total-item {
   position: absolute;
@@ -79,4 +91,65 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 920px) {
+  img {
+    width: 2rem;
+  }
+  .cart-icon {
+    color: white;
+    color: black;
+  }
+  .navbar {
+    padding: 0 1rem;
+
+    height: 4rem;
+  }
+  .menu-list {
+    .menu-item {
+      margin-right: 1rem;
+      .menu-link {
+        font-size: 0.7rem;
+      }
+    }
+  }
+  .action {
+    align-items: center;
+    display: flex;
+    .nav-btn {
+      height: 1.5rem;
+      width: 3, 5rem;
+      font-size: 0.8rem;
+    }
+  }
+  .cart-icon {
+    position: relative;
+    font-size: 1.2rem;
+
+    &:active {
+      color: red;
+    }
+  }
+  .total-item {
+    position: absolute;
+    top: 0.7rem;
+    right: 0.8rem;
+
+    height: 0.8rem;
+    width: 0.8rem;
+
+    font-size: 0.5rem;
+  }
+  .active {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1rem;
+      height: 2px;
+      background-color: red;
+      left: 0;
+      top: 1.4rem;
+    }
+  }
 }
