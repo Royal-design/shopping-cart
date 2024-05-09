@@ -17,7 +17,7 @@ export const Navbar = () => {
       <div className="menu">
         <ul className="menu-list">
           <li className="menu-item">
-            <NavLink className="menu-link" to="/">
+            <NavLink className="menu-link" to="/shopping-cart">
               Shop
             </NavLink>
           </li>
