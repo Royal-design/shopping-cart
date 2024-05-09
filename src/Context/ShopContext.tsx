@@ -25,7 +25,7 @@ type ChildrenType = {
 };
 
 export const ShopProvider = ({ children }: ChildrenType) => {
-  const [products, setproducts] = useState<ShopPropsType[]>(shopState);
+  const [products] = useState<ShopPropsType[]>(shopState);
   return (
     <ShopContext.Provider value={{ products }}>{children}</ShopContext.Provider>
   );

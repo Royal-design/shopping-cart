@@ -9,7 +9,6 @@ import { Footer } from "./components/Footer/Footer";
 import manImage from "./assets/pc4.png";
 import womanImage from "./assets/pc6.png";
 import kidimage from "./assets/pc2.png";
-import { LoginPage } from "./pages/LoginPage";
 
 function App() {
   return (

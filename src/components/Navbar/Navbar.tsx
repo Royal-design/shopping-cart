@@ -8,7 +8,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 
 export const Navbar = () => {
   const { totalItem } = useCartContextHook();
-  const { loginWithRedirect, logout, isAuthenticated, user }: any = useAuth0();
+  const { loginWithRedirect, logout, isAuthenticated }: any = useAuth0();
   const content = (
     <nav className="navbar">
       <div className="logo">
