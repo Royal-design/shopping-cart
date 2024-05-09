@@ -1,0 +1,5 @@
+.review:not(:last-child) {
+  margin-bottom: 1rem;
+  color: black;
+  border-bottom: 1px solid grey;
+}

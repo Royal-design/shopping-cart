@@ -1,0 +1,12 @@
+.breadcrumb {
+  padding: 0 4rem;
+  font-size: 14px;
+  &-link {
+    color: black;
+    text-decoration: none;
+    &:active {
+      color: red;
+    }
+    margin-right: 2px;
+  }
+}

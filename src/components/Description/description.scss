@@ -1,0 +1,41 @@
+.description {
+  &-box {
+    padding: 1rem 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+  &-btn {
+    padding: 0.7rem 2rem;
+    background-color: #e6e4e4;
+    border: none;
+    margin-right: 1rem;
+    transition: all 0.4s;
+    &:focus {
+      transform: translateX(-2px);
+    }
+  }
+  &-content {
+    margin-top: 1rem;
+    font-size: 14px;
+    border: 1px solid grey;
+    padding: 1rem;
+    width: 70%;
+  }
+  &-active {
+    background-color: orangered;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .description {
+    &-box {
+      margin-top: 2rem;
+      padding: 0 2rem;
+    }
+
+    &-content {
+      width: 100%;
+    }
+  }
+}

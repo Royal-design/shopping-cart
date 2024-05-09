@@ -1,0 +1,158 @@
+.product-display {
+  padding: 0 4rem;
+  margin-top: 2rem;
+  display: flex;
+  &-left {
+    flex: 1;
+  }
+  &-figure {
+    height: 5rem;
+    width: 5rem;
+    background-color: rgb(232, 228, 228);
+    &__big {
+      width: 100%;
+      height: 100%;
+      & > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+      }
+    }
+
+    & > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+  &-image__flex {
+    display: grid;
+    grid-template-columns: 6rem 1fr;
+    &-large {
+      background-color: rgb(232, 228, 228);
+      width: 25rem;
+      height: 25rem;
+    }
+    &-small {
+      height: 25rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+  &-right {
+    flex: 1;
+  }
+  &-name {
+    text-transform: uppercase;
+  }
+}
+.rating {
+  display: flex;
+  &-star {
+    font-size: 14px;
+  }
+  &-text {
+    font-size: 14px;
+    color: grey;
+  }
+}
+.prices {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  &-old {
+    text-decoration: line-through;
+    color: grey;
+  }
+  &-new {
+    color: orangered;
+  }
+}
+
+.description {
+  font-size: 14px;
+  margin-top: 2rem;
+}
+.size {
+  margin-top: 1rem;
+  &-text {
+    font-size: 14px;
+  }
+  &-group {
+    display: flex;
+    margin-top: 1rem;
+    gap: 14px;
+  }
+  &-btn {
+    padding: 0.5rem 1.3rem;
+    font-size: 14px;
+    border: 1px solid rgb(224, 221, 221);
+    background-color: rgb(246, 242, 242);
+    transition: all 0.4s;
+    &:focus {
+      background-color: rgb(224, 221, 221);
+    }
+  }
+}
+.cart-btn {
+  padding: 0.5rem 2rem;
+  background-color: orangered;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 2rem;
+  transition: all 0.4s;
+  &:active {
+    transform: translateY(-2px);
+  }
+}
+.category {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  margin-top: 1rem;
+  &-text {
+    &-bold {
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .product-display {
+    padding: 0 1rem;
+
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    &-left {
+      padding: 1rem;
+    }
+
+    &-image__flex {
+      display: flex;
+      gap: 10px;
+    }
+    &-right {
+      margin-top: 2rem;
+      padding: 1rem;
+    }
+  }
+
+  .prices {
+    font-size: 1rem;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+  .size {
+    &-btn {
+      padding: 0.3rem 1.2rem;
+    }
+  }
+}

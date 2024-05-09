@@ -1,0 +1,35 @@
+.related {
+  padding: 0 4rem;
+  width: 100%;
+  &-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  &-item {
+    justify-content: center;
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+hr {
+  width: 7rem;
+  border: 1.5px solid red;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 920px) {
+  .related {
+    margin-top: 2rem;
+    padding: 0 2rem;
+
+    &-heading {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    &-item {
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.newsletter {
+  width: 100%;
+  padding: 4rem;
+  &-container {
+    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+    padding: 4rem;
+  }
+  &-heading {
+    text-align: center;
+    font-size: 2rem;
+  }
+  &-text {
+    text-align: center;
+    font-size: 1rem;
+  }
+  &-group {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  &-offscreen {
+    position: absolute;
+    margin-left: -99rem;
+  }
+  &-input {
+    border-radius: 1rem;
+    border: 1px solid grey;
+    padding: 0 1rem;
+    width: 20rem;
+    transition: all 0.4s;
+    &:focus {
+      width: 21rem;
+    }
+  }
+  &-btn {
+    background-color: black;
+    border: none;
+    padding: 0.5rem 0;
+    width: 7rem;
+    margin-left: -4rem;
+    color: white;
+    border-radius: 1rem;
+    transition: all 0.4s;
+    &:hover {
+      background-color: rgb(40, 40, 40);
+    }
+    &:active {
+      transform: translateX(-2px);
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .newsletter {
+    padding: 4rem 0;
+  }
+}
