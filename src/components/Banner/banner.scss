@@ -1,5 +1,4 @@
 .banner {
-  width: 100%;
   padding: 4rem;
   display: flex;
   background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
@@ -79,7 +78,6 @@
 }
 @media only screen and (min-width: 900px) {
   .banner {
-    width: 73rem;
     height: 40rem;
     padding: 4rem;
 
