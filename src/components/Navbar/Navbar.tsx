@@ -64,7 +64,7 @@ export const Navbar = () => {
         <Link to="cart">
           <FontAwesomeIcon className="cart-icon" icon={faCartShopping} />
         </Link>
-        <span className="total-item">{totalItem}</span>
+        <div className="total-item">{totalItem}</div>
       </div>
     </nav>
   );
