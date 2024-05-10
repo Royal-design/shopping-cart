@@ -42,7 +42,7 @@
 .is-visible {
   opacity: 1;
 }
-@media screen and (width: 400px) {
+@media screen and (max-width: 600px) {
   .item {
     &-figure {
       width: 22rem;
