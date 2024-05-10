@@ -43,32 +43,68 @@
     }
   }
 }
+
 @media only screen and (max-width: 720px) {
   .banner {
     padding: 1rem;
     &-left {
       flex: 1;
     }
-    &-title {
-      font-weight: lighter;
-    }
+
     &-new {
       margin-right: 1rem;
-      font-size: 2rem;
+      font-size: 1.2rem;
     }
     &-handwave {
       width: 1.5rem;
     }
     &-collection {
-      font-size: 2rem;
-      line-height: 3rem;
+      font-size: 1.2rem;
+      line-height: 2rem;
     }
 
     &-img {
-      width: 20rem;
+      width: 10rem;
     }
     &-btn {
       margin-top: 2rem;
+    }
+    &-btn {
+      margin-top: 1rem;
+      font-size: 12px;
+      padding: 0.5rem 0;
+      width: 8rem;
+    }
+  }
+}
+@media only screen and (width: 1080px) {
+  .banner {
+    width: 73rem;
+    height: 40rem;
+    padding: 4rem;
+
+    &-new {
+      margin-right: 1rem;
+      font-size: 4.5rem;
+    }
+    &-handwave {
+      width: 3rem;
+    }
+    &-collection {
+      font-size: 4.5rem;
+      line-height: 5rem;
+    }
+    &-right {
+      flex: 1;
+    }
+    &-img {
+      width: 34rem;
+    }
+    &-btn {
+      margin-top: 2rem;
+      padding: 0.5rem 0;
+      width: 14rem;
+      font-size: 1.5rem;
     }
   }
 }

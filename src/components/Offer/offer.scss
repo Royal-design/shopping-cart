@@ -98,3 +98,43 @@
     }
   }
 }
+
+@media only screen and (width: 1080px) {
+  .offer {
+    width: 73rem;
+
+    &-btn {
+      margin-top: 2rem;
+      font-size: 1.4rem;
+      padding: 0.7rem 0;
+      width: 14rem;
+    }
+    &-figure {
+      width: 12rem;
+    }
+  }
+}
+@media only screen and (width: 400px) {
+  .offer {
+    padding: 3rem 0;
+    &-container {
+      padding: 2rem;
+    }
+    &-heading {
+      font-size: 1rem;
+    }
+    &-text {
+      margin-top: 8px;
+      font-size: 1rem;
+    }
+    &-btn {
+      margin-top: 1rem;
+      padding: 0.5rem 0;
+      width: 7rem;
+    }
+
+    &-figure {
+      width: 5rem;
+    }
+  }
+}

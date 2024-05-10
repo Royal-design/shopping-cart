@@ -6,13 +6,13 @@
 
   &-heading {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   &-item {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 3rem;
-    margin-top: 5rem;
+    margin-top: 2rem;
   }
 }
 
