@@ -18,7 +18,7 @@ hr {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   .related {
     margin-top: 2rem;
     padding: 0 2rem;
@@ -31,5 +31,23 @@ hr {
       flex-wrap: wrap;
       gap: 1rem;
     }
+  }
+}
+@media screen and (min-width: 800px) {
+  .related {
+    width: 79rem;
+    padding: 0 4rem;
+    margin-bottom: 2rem;
+    &-heading {
+      font-size: 1.5rem;
+      text-align: center;
+      margin: 2rem 0;
+    }
+  }
+
+  hr {
+    width: 7rem;
+    border: 1.5px solid red;
+    margin: 0 auto;
   }
 }

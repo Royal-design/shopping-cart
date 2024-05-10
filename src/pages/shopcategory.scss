@@ -48,7 +48,7 @@
     }
   }
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   .shopcategory {
     padding: 1rem;
     &-products {
@@ -56,5 +56,12 @@
       flex-wrap: wrap;
       justify-content: center;
     }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .shopcategory {
+    padding: 4rem;
+    width: 79rem;
   }
 }

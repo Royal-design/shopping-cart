@@ -40,3 +40,27 @@
     }
   }
 }
+@media screen and (min-width: 800px) {
+  .footer {
+    width: 79rem;
+    display: flex;
+    flex-direction: column;
+    &-link {
+      margin-right: 1rem;
+      text-decoration: none;
+      color: black;
+      transition: all 0.4s;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      font-size: 1.3rem;
+      &:hover {
+        color: rgb(78, 78, 78);
+      }
+    }
+    &-icon {
+      width: 10rem;
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
+  }
+}

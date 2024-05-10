@@ -27,9 +27,28 @@ hr {
   opacity: 0;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 720px) {
   .collection {
     padding: 0;
+    &-item {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .collection {
+    width: 79rem;
+    padding: 0;
+
+    &-heading {
+      text-align: center;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
     &-item {
       display: flex;
       flex-wrap: wrap;

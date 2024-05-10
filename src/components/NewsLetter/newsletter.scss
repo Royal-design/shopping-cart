@@ -50,8 +50,56 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 720px) {
   .newsletter {
+    padding: 2rem 0;
+    &-heading {
+      text-align: center;
+      font-size: 1.2rem;
+    }
+    &-text {
+      text-align: center;
+      font-size: 12px;
+    }
+
+    &-input {
+      width: 15rem;
+      transition: all 0.4s;
+    }
+    &-btn {
+      font-size: 14px;
+      background-color: black;
+      border: none;
+      padding: 0.5rem 0;
+      width: 5rem;
+      margin-left: -4rem;
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .newsletter {
+    width: 79rem;
     padding: 4rem 0;
+    margin-top: 3rem;
+    &-heading {
+      text-align: center;
+      font-size: 2rem;
+    }
+    &-text {
+      text-align: center;
+      font-size: 1.2rem;
+    }
+
+    &-input {
+      width: 25rem;
+      font-size: 1.2rem;
+      transition: all 0.4s;
+    }
+    &-btn {
+      font-size: 1.2rem;
+      padding: 0.5rem 0;
+      width: 7rem;
+    }
   }
 }

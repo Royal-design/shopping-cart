@@ -27,7 +27,7 @@
   }
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   .description {
     &-box {
       margin-top: 2rem;
@@ -36,6 +36,30 @@
 
     &-content {
       width: 100%;
+    }
+  }
+}
+@media screen and (min-width: 800px) {
+  .description {
+    &-box {
+      margin-top: 2rem;
+      padding: 0 2rem;
+    }
+
+    &-btn {
+      font-size: 1rem;
+      padding: 1rem 2rem;
+    }
+    &-content {
+      margin-top: 1rem;
+      font-size: 16px;
+      border: 1px solid grey;
+      padding: 1rem;
+      width: 100%;
+    }
+    &-active {
+      background-color: orangered;
+      color: white;
     }
   }
 }
