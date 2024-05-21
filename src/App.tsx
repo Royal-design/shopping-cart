@@ -1,6 +1,6 @@
 import { ErrorPage } from "./ErrorPage";
 import { Navbar } from "./components/Navbar/Navbar";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { Shop } from "./pages/Shop";
 import { ShopCategory } from "./pages/ShopCategory";
 import { Product } from "./pages/Product";
@@ -12,7 +12,7 @@ import kidimage from "./assets/pc2.png";
 
 function App() {
   return (
-    <BrowserRouter basename="/shopping-cart">
+    <div className="">
       <Navbar />
       <Routes>
         <Route index element={<Shop />} />
@@ -36,7 +36,7 @@ function App() {
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </div>
   );
 }
 
