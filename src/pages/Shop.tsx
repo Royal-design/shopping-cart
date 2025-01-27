@@ -1,4 +1,5 @@
 import { AdsPoster } from "../components/Banner/AdsPoster";
+import { Footer } from "../components/Footer/Footer";
 import { NewCollection } from "../components/NewCollection/NewCollection";
 import { NewsLetter } from "../components/NewsLetter/NewsLetter";
 import { Offer } from "../components/Offer/Offer";
@@ -12,6 +13,7 @@ export const Shop = () => {
       <Offer />
       <NewCollection />
       <NewsLetter />
+      <Footer />
     </>
   );
 };

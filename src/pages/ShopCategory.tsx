@@ -4,6 +4,7 @@ import "./shopcategory.scss";
 import { UseShopHook } from "../Hooks/UseShopHook";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { Footer } from "../components/Footer/Footer";
 
 type ShopCategoryPropsType = {
   image: string;
@@ -48,6 +49,7 @@ export const ShopCategory = ({ image, category }: ShopCategoryPropsType) => {
     <>
       <ShopBanner image={image} />
       {content}
+      <Footer />
     </>
   );
 };

@@ -2,7 +2,6 @@ import { ErrorPage } from "./ErrorPage";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Route, Routes } from "react-router-dom";
 
-import { Footer } from "./components/Footer/Footer";
 import manImage from "./assets/pc4.webp";
 import womanImage from "./assets/pc6.webp";
 import kidimage from "./assets/pc2.webp";
@@ -89,7 +88,6 @@ function App() {
         <Route path="/login" element={<Shop />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
-      <Footer />
     </div>
   );
 }

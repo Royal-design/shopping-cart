@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { CartList } from "../components/Cart/CartList";
 import { useCartContextHook } from "../Hooks/useCartContextHook";
+import { Footer } from "../components/Footer/Footer";
 
 export const Cart = () => {
   const [submit, setSubmit] = useState(false);
@@ -77,5 +78,10 @@ export const Cart = () => {
   ) : (
     content
   );
-  return pageContent;
+  return (
+    <>
+      {pageContent};
+      <Footer />
+    </>
+  );
 };
