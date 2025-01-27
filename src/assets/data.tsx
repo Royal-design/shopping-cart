@@ -1,7 +1,7 @@
-import pp21 from "./pp21.png";
-import pp22 from "./pp22.png";
-import pp23 from "./pp23.png";
-import pp24 from "./pp24.png";
+import pp21 from "./pp21.webp";
+import pp22 from "./pp22.webp";
+import pp23 from "./pp23.webp";
+import pp24 from "./pp24.webp";
 
 export const data_product = [
   {

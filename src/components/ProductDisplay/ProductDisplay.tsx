@@ -19,10 +19,11 @@ export const ProductDisplay = ({
   oldPrice,
   product
 }: ProductPropsType) => {
-  const { REDUCER_ACTION, dispatch } = useCartContextHook();
+  const { REDUCER_ACTION, dispatch, cart } = useCartContextHook();
 
   const addToCart = () => {
     dispatch({ type: REDUCER_ACTION.ADD, payload: { ...product, qty: 1 } });
+    console.log(cart);
   };
 
   const content = (

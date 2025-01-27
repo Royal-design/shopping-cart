@@ -1,4 +1,4 @@
-import offer_image from "../../assets/offersimage.png";
+import offer_image from "../../assets/offersimage.webp";
 import "./offer.scss";
 import { formatIntersection } from "../Popular/Popular";
 import { useEffect } from "react";

@@ -1,11 +1,11 @@
-import pp32 from "./pp32.png";
-import pp33 from "./pp33.png";
-import pp34 from "./pp34.png";
-import pp35 from "./pp35.png";
-import pp13 from "./pp13.png";
-import pp14 from "./pp14.png";
-import pp15 from "./pp15.png";
-import pp16 from "./pp16.png";
+import pp32 from "./pp32.webp";
+import pp33 from "./pp33.webp";
+import pp34 from "./pp34.webp";
+import pp35 from "./pp35.webp";
+import pp13 from "./pp13.webp";
+import pp14 from "./pp14.webp";
+import pp15 from "./pp15.webp";
+import pp16 from "./pp16.webp";
 
 export const new_collection = [
   {

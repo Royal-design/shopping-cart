@@ -1,5 +1,5 @@
 import handWave from "../../assets/handIcon.png";
-import bannerLady from "../../assets/bannerLady.png";
+import bannerLady from "../../assets/bannerLady.webp";
 import "./banner.scss";
 
 export const AdsPoster = () => {

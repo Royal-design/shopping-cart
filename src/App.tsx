@@ -3,15 +3,17 @@ import { Navbar } from "./components/Navbar/Navbar";
 import { Route, Routes } from "react-router-dom";
 
 import { Footer } from "./components/Footer/Footer";
-import manImage from "./assets/pc4.png";
-import womanImage from "./assets/pc6.png";
-import kidimage from "./assets/pc2.png";
+import manImage from "./assets/pc4.webp";
+import womanImage from "./assets/pc6.webp";
+import kidimage from "./assets/pc2.webp";
 import { lazy } from "react";
 import { Suspense } from "react";
+import { SpinerLoader } from "./components/SpinerLoader";
 
 const Shop = lazy(() =>
   import("./pages/Shop").then(({ Shop }) => ({ default: Shop }))
 );
+
 const ShopCategory = lazy(() =>
   import("./pages/ShopCategory").then(({ ShopCategory }) => ({
     default: ShopCategory
@@ -37,7 +39,7 @@ function App() {
         <Route
           index
           element={
-            <Suspense fallback={<p>Loading...</p>}>
+            <Suspense fallback={<SpinerLoader />}>
               <Shop />
             </Suspense>
           }
@@ -45,7 +47,7 @@ function App() {
         <Route
           path="/men"
           element={
-            <Suspense fallback={<p>Loading...</p>}>
+            <Suspense fallback={<SpinerLoader />}>
               <ShopCategory category="men" image={manImage} />
             </Suspense>
           }
@@ -53,7 +55,7 @@ function App() {
         <Route
           path="/women"
           element={
-            <Suspense fallback={<p>Loading...</p>}>
+            <Suspense fallback={<SpinerLoader />}>
               <ShopCategory category="women" image={womanImage} />
             </Suspense>
           }
@@ -61,7 +63,7 @@ function App() {
         <Route
           path="/kids"
           element={
-            <Suspense fallback={<p>Loading...</p>}>
+            <Suspense fallback={<SpinerLoader />}>
               <ShopCategory category="kids" image={kidimage} />
             </Suspense>
           }
@@ -69,7 +71,7 @@ function App() {
         <Route
           path="/product"
           element={
-            <Suspense fallback={<p>Loading...</p>}>
+            <Suspense fallback={<SpinerLoader />}>
               <Product />
             </Suspense>
           }
@@ -79,7 +81,7 @@ function App() {
         <Route
           path="/cart"
           element={
-            <Suspense fallback={<p>Loading...</p>}>
+            <Suspense fallback={<SpinerLoader />}>
               <Cart />
             </Suspense>
           }
