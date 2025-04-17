@@ -21,6 +21,6 @@
 - **React** – UI Library
 - **TypeScript** – Type safety and improved development experience
 - **SCSS** – Modular and reusable styling
-- **Vite** (optional) – Fast development server and build tool
+- **Vite** – Fast development server and build tool
 
 ---
